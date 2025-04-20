@@ -5,7 +5,9 @@ const ProjectCard = ({
     description, 
     videoSrc, 
     cardTitle, 
-    cardDescription 
+    cardDescription,
+    thumbnail,
+    author,
 }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
@@ -21,6 +23,7 @@ const ProjectCard = ({
     return (
         <>
             <div className="service-card" onClick={handleCardClick}>
+                <img src={thumbnail} alt="thumbnail" className="thumbnail" />
                 <h3>{cardTitle}</h3>
                 <p>{cardDescription}</p>
             </div>
@@ -39,7 +42,7 @@ const ProjectCard = ({
                             <h2>{title}</h2>
                             <div className="modal-footer">
                                 <p className="project-description">
-                                    {description}
+                                    {author}
                                 </p>
                             </div>
                         </div>

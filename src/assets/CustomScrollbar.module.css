@@ -96,9 +96,9 @@
 
 .tooltip {
   position: absolute;
-  left: 120%; /* Move tooltip to the right */
-  top: 50%; /* Center vertically */
-  transform: translateY(-50%) rotate(-180deg); /* Counter-rotate */
+  left: -50%; /* Move tooltip to the right */
+  top: -90%; /* Center vertically */
+  transform: translateY(-50%) rotate(-270deg); /* Counter-rotate */
   
   background: rgba(50, 50, 50, 0.9);
   color: #fff;
@@ -112,7 +112,9 @@
   opacity: 0;
   pointer-events: none;
 }
-
+.bug:hover .tooltip {
+  opacity: 1;
+}
 
 /* Hamburger Styles */
 .hamburger {

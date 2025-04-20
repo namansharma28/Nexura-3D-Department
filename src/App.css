@@ -89,6 +89,10 @@ body {
     object-fit: contain;
     display: block;
 }
+.thumbnail {
+  width: 100%;
+  height: 8rem;
+}
 
 .video-overlay-content {
     position: absolute;
