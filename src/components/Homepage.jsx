@@ -35,7 +35,7 @@ const projectsData = [
     thumbnail: project2thumbnail,
   },
   {
-    cardTitle: "Car mode",
+    cardTitle: "Car model",
     cardDescription: "3D model Animation",
     title: "3D car model Animation",
     description:
@@ -290,7 +290,7 @@ const Homepage = () => {
             For GEEKS <span className="small">(Designers)</span>
           </h2>
           <p>
-          At Nexura.Code, our 3D Team is where creativity takes shape—literally. We’re a bunch of 3D artists who turn wild ideas into stunning visuals, immersive models, and smooth animations. Whether it’s crafting hyper-detailed assets, designing surreal environments, or experimenting with textures and lighting, we do it all with flair and a love for digital sculpting.
+          At Nexura.3D, our 3D Team is where creativity takes shape—literally. We’re a bunch of 3D artists who turn wild ideas into stunning visuals, immersive models, and smooth animations. Whether it’s crafting hyper-detailed assets, designing surreal environments, or experimenting with textures and lighting, we do it all with flair and a love for digital sculpting.
 
           </p>
           <p>
@@ -394,13 +394,10 @@ const Homepage = () => {
               <h3>Quick links</h3>
               <ul>
                 <li>
-                  <a href="#">Main Website</a>
+                  <a href="https://versal-nexura.vercel.app/">Main Website</a>
                 </li>
                 <li>
-                  <a href="#">Join Us</a>
-                </li>
-                <li>
-                  <a href="#">Website Designing Team</a>
+                  <a href="https://forms.gle/r98YMrmw8YpGf2vZ9#">Join Us</a>
                 </li>
               </ul>
             </div>
@@ -412,9 +409,6 @@ const Homepage = () => {
                 </li>
                 <li>
                   <a href="https://www.instagram.com/nexura_rgpv/">Instagram</a>
-                </li>
-                <li>
-                  <a href="#">LinkedIn</a>
                 </li>
               </ul>
             </div>
