@@ -28,7 +28,8 @@ const CustomScrollbar = () => {
       setScrollPercentage(scrolled);
 
       // Update active section based on scroll position
-      const sections = ["home", "features", "about", "open-source", "pricing"];
+      const sections = ["home", "about", "projects", "Team", "contactSection"];
+
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -74,21 +75,29 @@ const CustomScrollbar = () => {
         >
           {isHovering ? "127.0.0.1" : "Home"}
         </div>
+        
         <div 
-          className={`${styles.navLink} ${activeSection === "features" ? styles.active : ""}`}
+          className={`${styles.navLink} ${activeSection === "about" ? styles.active : ""}`}
+          onClick={() => scrollToSection("about")}
+        >
+          About
+        </div>
+
+        <div 
+          className={`${styles.navLink} ${activeSection === "projects" ? styles.active : ""}`}
           onClick={() => scrollToSection("projects")}
         >
           Projects
         </div>
         <div 
-          className={`${styles.navLink} ${activeSection === "open-source" ? styles.active : ""}`}
+          className={`${styles.navLink} ${activeSection === "Team" ? styles.active : ""}`}
           onClick={() => scrollToSection("Team")}
         >
           Team
         </div>
         <div 
-          className={`${styles.navLink} ${activeSection === "pricing" ? styles.active : ""}`}
-          onClick={() => scrollToSection("contact")}
+          className={`${styles.navLink} ${activeSection === "contactSection" ? styles.active : ""}`}
+          onClick={() => scrollToSection("contactSection")}
         >
           Contact
         </div>
@@ -111,7 +120,7 @@ const CustomScrollbar = () => {
             🚗
             {showTooltip && (
               <div className={styles.tooltip}>
-                I'm not a bug,<br />I'm a feature!
+                Entered Light mode...<br />reflections broke the render.
               </div>
             )}
           </div>

@@ -6,6 +6,8 @@ import Himanshu from "/Himanshu Bharti.jpg";
 import Kunal from "/Kunal Thakur.jpg";
 import Rishi from "/Rishi Pandey.jpg";
 import img from "/IMG-20250319-WA0003.jpg";
+import pawan from "/pawan.jpg";
+import rishabh from "/Rishabh.jpg";
 
 const DropDown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,26 +15,21 @@ const DropDown = () => {
   const members = [
     {
       image1: Devendra,
-      name1: "Aryan Singh",
+      name1: "",
       image2: Himanshu,
-      name2: "Yashi Trivedi",
+      name2: "",
     },
-    {
-      image1: Kunal,
-      name1: "Kashish Bhuriya",
-      image2: Rishi,
-      name2: "Vaidika Purohit",
-    },
+    
     
   ]
   return (
     <div className={styles.dropdown} id="team">
       <div className={styles.mainMembers}>
       <TeamMember 
-            image1= {Rishi}
-            name1="Rishi Pandey" 
-            image2={Kunal}
-            name2="Kunal Thakur" 
+            image1= {pawan}
+            name1="Pawan Soni" 
+            image2={rishabh}
+            name2="Rishabh" 
           />
           <TeamMember 
             image1= {Himanshu}
@@ -45,6 +42,12 @@ const DropDown = () => {
             name1="img" 
             image2=""
             name2="Your Spot"
+            />
+            <TeamMember
+            image1= {Kunal}
+            name1="Kunal Thakur"
+            image2={Rishi}
+            name2="Rishi Pandey" 
             />
           </div>
           {/* <button

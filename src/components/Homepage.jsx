@@ -154,6 +154,16 @@ const Homepage = () => {
   }, []);
   const labelIndex = progress / 25; // For 0%, 25%, 50%, 75%, and 100%
 
+  useEffect(() => {
+    const scrollToSection = document.querySelector(".features");
+    const timeoutId = setTimeout(() => {
+      if (scrollToSection) {
+        scrollToSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 5000);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   return (
     <div className="homepage">
@@ -238,7 +248,7 @@ const Homepage = () => {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="features">
+      <section id="about" className="features">
         <h2>WHY US?</h2>
         <div className="features-container">
           <div className="feature-card">
@@ -274,7 +284,7 @@ const Homepage = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="about">
+      <section id="About" className="about">
         <div className="about-content">
           <h2>
             For GEEKS <span className="small">(Designers)</span>
@@ -329,7 +339,7 @@ const Homepage = () => {
         </div>
       </section>
 
-      {/* Pricing Section */}
+      {/* Project Section */}
       <section id="projects" className="services">
         <h2>Our Projects</h2>
         <div className="services-container">
@@ -350,8 +360,9 @@ const Homepage = () => {
         <h2>Brains Behind the Design</h2>
         <Dropdown />
       </section>
+      <section id="contactSection">
       <Contact />
-
+      </section>
       {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
